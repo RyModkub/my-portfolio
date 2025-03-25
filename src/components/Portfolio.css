@@ -202,25 +202,28 @@ profile-section, .about-section, .skills-slider, .footer {
   left: 0;
   width: 100%;
   background-color: #333;
-  padding: 10px 0;
+  padding: 10px 20px;
   z-index: 100;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* กระจายระหว่างเมนูซ้าย & ขวา */
+  align-items: center;
 }
 
-.navbar ul {
+/* เมนูซ้าย (ลิงก์ไปยังหน้าในเว็บไซต์) */
+.nav-left {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 20px;
   padding: 0;
   margin: 0;
 }
 
-.navbar li {
+.nav-left li {
   display: inline;
 }
 
-.navbar a {
+.nav-left a {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -228,9 +231,26 @@ profile-section, .about-section, .skills-slider, .footer {
   transition: 0.3s;
 }
 
-.navbar a:hover {
+.nav-left a:hover {
   background-color: #555;
   border-radius: 5px;
+}
+
+/* เมนูขวา (Dropdown เลือกภาษา) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-right select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
 }
 
 /* Social Links */
