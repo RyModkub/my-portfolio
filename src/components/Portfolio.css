@@ -24,7 +24,7 @@ body {
   text-align: center;
   width: 100%;
   scroll-snap-type: y mandatory;
-  
+  scroll-behavior: smooth; 
 }
 
 /* ปรับ margin ให้มีช่องระหว่างแต่ละ section */
@@ -39,8 +39,7 @@ body {
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
-  scroll-snap-align: start;
+  transition: opacity 1s, transform 1s;
   margin-bottom: 50px; /* เพิ่มช่องระหว่างแต่ละส่วน */
 }
 
