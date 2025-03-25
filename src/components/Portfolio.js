@@ -158,7 +158,7 @@ const Portfolio = () => {
           {text[language].aboutContent.map((line, index) => (
           <p key={index}>{line}</p>
         ))}
-        </div>
+      </div>
 
         {/* Skills Section */}
         <div id="skills" className="section skills-slider">
