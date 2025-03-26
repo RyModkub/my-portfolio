@@ -41,6 +41,8 @@ body {
   transform: translateY(20px);
   transition: opacity 1s, transform 1s;
   margin-bottom: 50px; /* เพิ่มช่องระหว่างแต่ละส่วน */
+  scroll-snap-align: start; /* ให้ล็อคแต่ละ section */
+  scroll-snap-stop: always; /* ป้องกันไม่ให้ข้าม section */
 }
 
 profile-section, .about-section, .skills-slider, .footer {
