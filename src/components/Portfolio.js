@@ -57,6 +57,10 @@ const Portfolio = () => {
       skills: "ทักษะ",
       experience: "ประสบการณ์",
       projects: "งานของฉัน",
+      vueProjectTitle: "เว็บไซต์แนะนำ Vue.js",
+      vueProjectDescription: "เว็บไซต์แนะนำ Vue.js พร้อมโค้ดตัวอย่างและการใช้งานจริง",
+      contactAppTitle: "เว็บแอปสำหรับจัดการข้อมูลการติดต่อ",
+      contactAppDescription: "เว็บแอปสำหรับจัดการข้อมูลการติดต่อ",
       contact: "ติดต่อ",
       welcome: "ยินดีต้อนรับสู่ My Web Portfolio ของฉัน",
       aboutMe: "เกี่ยวกับฉัน",
@@ -79,6 +83,10 @@ const Portfolio = () => {
       skills: "Skills",
       experience: "Experience",
       projects: "My Projects",
+      vueProjectTitle: "Vue.js Presentation Website",
+      vueProjectDescription: "A website showcasing Vue.js with sample code and real-world usage.",
+      contactAppTitle: "Visitor Information Management Web App",
+      contactAppDescription: "A web app for managing contact information.",
       contact: "Contact",
       welcome: "Welcome to My Web Portfolio",
       aboutMe: "About Me",
@@ -101,6 +109,10 @@ const Portfolio = () => {
       skills: "スキル",
       experience: "経験",
       projects: "プロジェクト",
+      vueProjectTitle: "Vue.js プレゼンテーションウェブサイト",
+      vueProjectDescription: "サンプルコードと実際の使用例を紹介するVue.jsウェブサイト。",
+      contactAppTitle: "訪問者情報管理ウェブアプリ",
+      contactAppDescription: "連絡先情報を管理するためのウェブアプリ。",
       contact: "連絡先",
       welcome: "私のWebポートフォリオへようこそ",
       aboutMe: "私について",
@@ -212,23 +224,23 @@ const Portfolio = () => {
   <h2>{text[language].projects}</h2>
   <div className="projects-container">
     <div className="project-item">
-      <h3>Vue.js Presentation Website</h3>
+    <h3>{text[language].vueProjectTitle}</h3>
       <div className="project-images">
         <img src="/images/vue1.jpg" alt="Vue.js Project 1" />
         <img src="/images/vue2.jpg" alt="Vue.js Project 2" />
         <img src="/images/vue3.jpg" alt="Vue.js Project 3" />
       </div>
-      <p>เว็บไซต์แนะนำ Vue.js พร้อมโค้ดตัวอย่างและการใช้งานจริง</p>
+      <p>{text[language].vueProjectDescription}</p>
     </div>
 
     <div className="project-item">
-      <h3>Visitor Information Management Web App</h3>
+    <h3>{text[language].contactAppTitle}</h3>
       <div className="project-images">
         <img src="/images/contact1.jpg" alt="Contact App 1" />
         <img src="/images/contact2.jpg" alt="Contact App 2" />
         <img src="/images/contact3.jpg" alt="Contact App 3" />
       </div>
-      <p>เว็บแอปสำหรับจัดการรายชื่อติดต่อ</p>
+      <p>{text[language].contactAppDescription}</p>
     </div>
   </div>
 </div>
