@@ -55,6 +55,8 @@ const Portfolio = () => {
       profile: "โปรไฟล์",
       about: "เกี่ยวกับฉัน",
       skills: "ทักษะ",
+      experience: "ประสบการณ์",
+      projects: "งานของฉัน",
       contact: "ติดต่อ",
       welcome: "ยินดีต้อนรับสู่ My Web Portfolio ของฉัน",
       aboutMe: "เกี่ยวกับฉัน",
@@ -75,6 +77,8 @@ const Portfolio = () => {
       profile: "Profile",
       about: "About",
       skills: "Skills",
+      experience: "Experience",
+      projects: "My Projects",
       contact: "Contact",
       welcome: "Welcome to My Web Portfolio",
       aboutMe: "About Me",
@@ -95,6 +99,8 @@ const Portfolio = () => {
       profile: "プロフィール",
       about: "私について",
       skills: "スキル",
+      experience: "経験",
+      projects: "プロジェクト",
       contact: "連絡先",
       welcome: "私のWebポートフォリオへようこそ",
       aboutMe: "私について",
@@ -121,7 +127,9 @@ const Portfolio = () => {
         <ul className="nav-left">
         <li><a href="#profile" onClick={(e) => handleNavClick(e, "profile")}>{text[language].profile}</a></li>
         <li><a href="#about" onClick={(e) => handleNavClick(e, "about")}>{text[language].about}</a></li>
-        <li><a href="#skills" onClick={(e) => handleNavClick(e, "skills")}>{text[language].skills}</a></li>
+        <li><a href="#experience" onClick={(e) => handleNavClick(e, "experience")}>{text[language].experience}</a></li>
+        <li><a href="#skills" onClick={(e) => handleNavClick(e, "skills")}>{text[language].skills}</a></li> 
+        <li><a href="#projects" onClick={(e) => handleNavClick(e, "projects")}>{text[language].projects}</a></li>
         <li><a href="#contact" onClick={(e) => handleNavClick(e, "contact")}>{text[language].contact}</a></li>
         </ul>
 
@@ -160,6 +168,23 @@ const Portfolio = () => {
         ))}
       </div>
 
+        {/* Experience Section */}
+<div id="experience" className="section experience-section">
+  <h2>{text[language].experience}</h2><br></br>
+  <div className="experience-container">
+    <div className="experience-item">
+    <p>Intern</p>
+      <img src="/images/tot.jpg" alt="TOT Samut Songkhram" className="experience-image" />
+      <p>TOT Customer Service Center, Samut Songkhram</p>
+    </div>
+    <div className="experience-item">
+    <p>Intern</p>
+      <img src="/images/softdebut.jpg" alt="Soft De'but Co.,Ltd." className="experience-image" />
+      <p>Soft De'but Co.,Ltd.</p>
+    </div>
+  </div>
+</div>
+
         {/* Skills Section */}
         <div id="skills" className="section skills-slider">
           <h2>{text[language].mySkills}</h2>
@@ -181,6 +206,33 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
+        
+{/* Projects Section */}
+<div id="projects" className="section projects-section">
+  <h2>{text[language].projects}</h2>
+  <div className="projects-container">
+    <div className="project-item">
+      <h3>Vue.js Presentation Website</h3>
+      <div className="project-images">
+        <img src="/images/vue1.jpg" alt="Vue.js Project 1" />
+        <img src="/images/vue2.jpg" alt="Vue.js Project 2" />
+        <img src="/images/vue3.jpg" alt="Vue.js Project 3" />
+      </div>
+      <p>เว็บไซต์แนะนำ Vue.js พร้อมโค้ดตัวอย่างและการใช้งานจริง</p>
+    </div>
+
+    <div className="project-item">
+      <h3>Visitor Information Management Web App</h3>
+      <div className="project-images">
+        <img src="/images/contact1.jpg" alt="Contact App 1" />
+        <img src="/images/contact2.jpg" alt="Contact App 2" />
+        <img src="/images/contact3.jpg" alt="Contact App 3" />
+      </div>
+      <p>เว็บแอปสำหรับจัดการรายชื่อติดต่อ</p>
+    </div>
+  </div>
+</div>
+
 
         {/* Contact Section */}
         <footer id="contact" className="section footer">

@@ -95,6 +95,63 @@ profile-section, .about-section, .skills-slider, .footer {
   background-color: #0056b3;
 }
 
+/* Experience Section */
+.experience-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.experience-item {
+  text-align: center;
+  width: 300px;
+  padding: 30px; /* เพิ่ม padding เพื่อให้ border อยู่รอบรูป */
+  border: 3px solid #333; /* กรอบรอบรูป */
+  border-radius: 12px;
+  background: #fff; /* ให้พื้นหลังขาว จะได้แยกจากพื้นหลังเว็บ */
+}
+
+.experience-item img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;  /* ให้โปรเจคห่อแถว */
+  gap: 30px;  /* ระยะห่างระหว่างโปรเจค */
+}
+
+.project-item {
+  width: 100%;  
+  box-sizing: border-box;
+  text-align: center;
+  border: 3px solid #ddd;  /* กรอบโปรเจค */
+  border-radius: 10px;
+  padding: 15px;
+  background: #fff;
+}
+
+.project-images {
+  display: flex;  /* ใช้ flex เพื่อจัดรูปภาพในแถวเดียว */
+  justify-content: center;  /* ให้รูปแต่ละรูปห่างกัน */
+  gap: 10px;  /* ระยะห่างระหว่างรูป */
+}
+
+.project-images img {
+  width: 500px;  /* ขนาดของรูป */
+  height: 500px;  /* ความสูงของรูป */
+  object-fit: cover; 
+  border-radius: 8px;
+  border: 2px solid #ddd;  /* กรอบรอบๆ รูป */
+  max-width: 100%; 
+}
+
+
 /* แก้ไขให้หัวข้อ My Skill อยู่ตรงกลางและมีการจัดรูปแบบ */
 .skills-section {
   display: flex;
@@ -123,6 +180,10 @@ profile-section, .about-section, .skills-slider, .footer {
   margin-bottom: 30px;
   animation: skillAnimation 2s ease-out infinite;
   transition: transform 0.3s ease, filter 0.3s ease;
+  padding: 10px; /* เพิ่ม padding เพื่อให้ border อยู่รอบรูป */
+  border: 3px solid #333; /* กรอบรอบรูป */
+  border-radius: 12px;
+  background: #fff; /* ให้พื้นหลังขาว จะได้แยกจากพื้นหลังเว็บ */
 }
 
 @keyframes skillAnimation {
